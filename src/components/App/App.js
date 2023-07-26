@@ -1,20 +1,36 @@
 import './App.css';
 import { Component } from 'react';
-import articles from '../../mockData'
 import Articles from '../Articles/Articles';
 import Search from '../Search/Search';
 import { Route } from 'react-router-dom/cjs/react-router-dom.min';
 import Details from '../Details/Details';
 import { NavLink } from 'react-router-dom/cjs/react-router-dom.min';
+import { getArticles } from '../../apiCalls';
 
 
 class App extends Component {
   constructor() {
     super();
     this.state = {
-      articles: articles.articles,
+      articles: [],
       searchResults: [],
+      error: '',
     };
+  }
+
+  componentDidMount() {
+    getArticles()
+      .then(articles => {
+        const firstTenArticles = articles.articles.slice(6, 29)
+        this.setState({
+          articles: firstTenArticles
+        })
+      })
+      .catch(error => {
+        this.setState({
+          error: error.message
+        })
+      })
   }
 
   filterArticles = (userValue) => {
@@ -29,6 +45,9 @@ class App extends Component {
     });
 
   };
+
+
+
 
   render() {
     const { searchResults, articles } = this.state;
