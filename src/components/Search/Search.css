@@ -1,0 +1,43 @@
+ 
+  .form{
+    padding: 4%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 92%;
+    height: 100%;
+  }
+
+  .search-inp {
+    width: 30%;
+    height: 25%;
+    border: 0.5px solid rgb(217, 217, 217);
+    border-radius: 25px;
+    padding: 0.1%;
+    box-shadow: 0.5px 0.5px 1px 0px rgba(155, 155, 155, 0.3);
+  }
+
+  @media screen and (max-width: 894px) and (min-width: 629px) {
+    .search-inp {
+      width: 60%;
+      height: 15%;
+    }
+    .form {
+      padding: 7%;
+    }
+  }
+
+  @media screen and (max-width: 628px) {
+    .search-inp {
+      width: 70%;
+    }
+    .form {
+      padding: 7%;
+    }
+  }
+
+  @media screen and (max-width: 1271px) {
+    .search-inp {
+      height: 15%;
+    }
+  }
