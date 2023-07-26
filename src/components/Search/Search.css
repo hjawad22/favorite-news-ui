@@ -30,6 +30,7 @@
   @media screen and (max-width: 628px) {
     .search-inp {
       width: 70%;
+      margin-bottom: 6%;
     }
     .form {
       padding: 7%;

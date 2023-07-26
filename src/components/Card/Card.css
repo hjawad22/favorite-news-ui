@@ -3,16 +3,22 @@
     width: 100%;
     min-width: 100%;
   }
-  .card-details{
+  .card-details-container{
     background-color: white;
     height: 50%;
-    width: 100%;
+    width: 100%; 
+    /* border: 1px blueviolet solid; */
 
+  }
+
+  .image-container{
+   height: 50%;
+   /* border: 1px rgb(226, 43, 125) solid; */
   }
   
   .card-image {
     width: 100%;
-    height: 50%;
+    height: 100%;
     border-radius: 20px;
   }
  

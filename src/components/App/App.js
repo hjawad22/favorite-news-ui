@@ -19,9 +19,9 @@ class App extends Component {
 
   filterArticles = (userValue) => {
     const filtered = this.state.articles.filter((story) => {
-      const title = story.title.toLowerCase();
-      const date = story.publishedAt.toLowerCase();
-      return title.includes(userValue.toLowerCase()) || date.includes(userValue.toLowerCase());
+      const title = story.title.toLowerCase()
+      const date = story.publishedAt
+      return title.includes(userValue.toLowerCase()) || date.includes(userValue)
     });
 
     this.setState({
@@ -37,7 +37,6 @@ class App extends Component {
         <Route exact path='/' render={() => (
           <div className="App">
             <div className='hero-image-container'>
-              {/* <h1 className='logo'>Insynced</h1> */}
               <Search filterArticles={this.filterArticles} />
             </div>
             <div className='stories-container'>
