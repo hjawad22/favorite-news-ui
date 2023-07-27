@@ -2,7 +2,7 @@
     width: 85%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 2%; 
+    gap: 1%; 
     padding: 2%; 
     border-radius: 20px;
   }

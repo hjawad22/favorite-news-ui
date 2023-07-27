@@ -10,7 +10,7 @@ const Card = ({ title, description, urlToImage, publishedAt }) => {
             <div className="image-container">
                 <img className='card-image' src={urlToImage} alt={title} />
             </div>
-            <div className='card-details'>
+            <div className='card-details-container'>
                 <p className="card-date words">Date: {publishedAt}</p>
                 <p className='card-title words'>{title}</p>
                 <p className='card-description words'>{description}</p>
