@@ -4,6 +4,11 @@
 ## Abstract
 This is a user friendly news site that allows users to search for news articles based on their titles or keywords. The site fetches data from the News API to provide the latest news articles to the users. The search functionality enables users to find specific articles quickly and efficiently.
 
+## GIF
+
+![Animated GIF](https://media.giphy.com/media/RS65HCl1PvagWsrXIa/giphy.gif)
+
+
 ## Features
 - Search by Title or Keyword: Users can enter a search query in the search bar to find news articles with matching titles or keywords.
 

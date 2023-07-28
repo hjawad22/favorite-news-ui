@@ -21,9 +21,9 @@ class App extends Component {
   componentDidMount() {
     getArticles()
       .then(articles => {
-        const firstTenArticles = articles.articles.slice(6, 29)
+        const condensedArticles = articles.articles.slice(6, 29)
         this.setState({
-          articles: firstTenArticles
+          articles: condensedArticles
         })
       })
       .catch(error => {
